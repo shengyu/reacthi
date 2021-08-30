@@ -3,12 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Login from './Login';
+import LifeCycle from './LifeCycle';
 
 ReactDOM.render(
   <React.StrictMode>
     <Login />
   </React.StrictMode>,
   document.getElementById('root')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <LifeCycle />
+  </React.StrictMode>,
+  document.getElementById('life')
 );
 
 // If you want to start measuring performance in your app, pass a function
