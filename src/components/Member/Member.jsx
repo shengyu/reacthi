@@ -1,5 +1,5 @@
 import React from 'react'
-import './Member.css'
+import member from './Member.module.css'
 export default class Member extends React.Component {
     state = {
         members: [
@@ -17,7 +17,7 @@ export default class Member extends React.Component {
     render() {
         return (
             <div>
-                <h2 className="info">Memeber Info</h2>
+                <h2 className={member.info}>Memeber Info</h2>
                 <button onClick={this.add}>Add member</button>
                 <ul>
                     {
