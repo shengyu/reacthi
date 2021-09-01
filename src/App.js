@@ -1,9 +1,9 @@
-import Member from "./components/Member/Member";
+import Todo from './components/Todo';
 
 function App() {
   return (
     <div>
-      <Member />
+      <Todo />
     </div>
   );
 }
