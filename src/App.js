@@ -1,9 +1,9 @@
-import Todo from './components/Todo';
+import Ajax from './components/Ajax';
 
 function App() {
   return (
     <div>
-      <Todo />
+      <Ajax />
     </div>
   );
 }
