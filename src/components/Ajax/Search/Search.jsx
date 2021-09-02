@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import PubSub from 'pubsub-js';
 
 export default class Search extends Component {
-    search = () => {
-        const { keyWordElement: { value: keyword } } = this;
-        
+    search = async() => {
+        const { keyWordElement: { value: keyWord } } = this;
+
         PubSub.publish('github', { isFirst: false, isLoading: true });
-        
-        axios.get(`/api1/search/users2?q=${keyword}`).then(
-            response => {
-                PubSub.publish('github', { isLoading: false, users: response.data.items });
-            },
-            error => {
-                PubSub.publish('github', { isLoading: false, err: error.message });
-            }
-        );
+
+        try {
+            const response = await fetch(`/api1/search/users2?q=${keyWord}`);
+            const data = await response.json();
+            console.log(data);
+            PubSub.publish('github', { isLoading: false, users: data.items });
+        } catch (error) {
+            console.log('Request failed', error);
+            PubSub.publish('github', { isLoading: false, err: error.message });
+        }
     };
 
     render() {
