@@ -1,9 +1,9 @@
-import Ajax from './components/Ajax';
+import Router from './components/Router';
 
 function App() {
   return (
     <div>
-      <Ajax />
+      <Router />
     </div>
   );
 }
