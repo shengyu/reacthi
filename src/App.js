@@ -1,9 +1,9 @@
-import Router from './components/Router';
+import Typed from './components/Typed';
 
 function App() {
   return (
     <div>
-      <Router />
+      <Typed />
     </div>
   );
 }
