@@ -1,9 +1,9 @@
-import Typed from './components/Typed';
+import NaviBar from './components/NaviBar';
 
 function App() {
   return (
     <div>
-      <Typed />
+      <NaviBar />
     </div>
   );
 }

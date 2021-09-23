@@ -1,0 +1,30 @@
+.box1 {
+    background-color: yellow;
+    width: 100%;
+    height: 100px;
+}
+
+.box2 {
+    background-color: green;
+    width: 200px;
+    height: 100vh;
+    float: left;
+}
+
+.content {
+    background-color: mediumaquamarine;
+    float: right;
+    height: 100vh;
+    width: calc(100% - 200px);
+}
+
+.content .import-repo {
+    background-color: chartreuse;
+    width: 200px;
+    height: 200px;
+    margin: 200px 200px;
+}
+
+.wrapper1 {
+    width: 100vw;
+}
