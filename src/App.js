@@ -1,9 +1,9 @@
-import NaviBar from './components/NaviBar';
+import GridDemo from './components/GridDemo';
 
 function App() {
   return (
     <div>
-      <NaviBar />
+      <GridDemo />
     </div>
   );
 }

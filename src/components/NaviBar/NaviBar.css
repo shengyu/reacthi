@@ -1,30 +1,63 @@
-.box1 {
-    background-color: yellow;
-    width: 100%;
-    height: 100px;
+.header {
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  min-width: 320px;
+  max-width: 540px;
+  background-color:goldenrod;
+  height: 44px;
+  display: flex;
 }
 
-.box2 {
-    background-color: green;
-    width: 200px;
-    height: 100vh;
-    float: left;
+.header .search-box {
+  flex: 1;
+  background-color: aquamarine;
+}
+
+.header .avatar {
+  width: 44px;
+  height: 44px;
+  background-color: aqua;
+}
+
+
+.sidebar {
+  background-color: green;
+  width: 200px;
 }
 
 .content {
-    background-color: mediumaquamarine;
-    float: right;
-    height: 100vh;
-    width: calc(100% - 200px);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: gray;
+  width: 500px;
 }
 
-.content .import-repo {
-    background-color: chartreuse;
-    width: 200px;
-    height: 200px;
-    margin: 200px 200px;
+.content .import-repo-1 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background-color: blanchedalmond;
+}
+
+.content .import-repo-2 {
+  border: 1px solid red;
+  background-color: blanchedalmond;
+  width: 100px;
+  height: 100px;
+}
+
+.content .import-repo-3 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  background-color: blanchedalmond;
 }
 
 .wrapper1 {
-    width: 100vw;
+  display: flex;
+  padding-top: 44px;
+  height: 2000px;
 }

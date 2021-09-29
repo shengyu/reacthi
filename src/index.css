@@ -8,7 +8,9 @@
 }
 
 body {
+  min-width: 320px;
   line-height: 1.5;
+  margin: 0px auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
