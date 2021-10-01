@@ -1,9 +1,9 @@
-import GridDemo from './components/GridDemo';
+import RouterNesting from './components/RouterNesting';
 
 function App() {
   return (
     <div>
-      <GridDemo />
+      <RouterNesting />
     </div>
   );
 }
