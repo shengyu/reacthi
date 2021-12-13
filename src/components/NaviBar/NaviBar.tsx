@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "./NaviBar.css";
+import React, { Component } from 'react';
+import './NaviBar.css';
 
 export default class NaviBar extends Component {
   render() {

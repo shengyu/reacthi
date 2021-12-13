@@ -1,1 +1,1 @@
-export {default} from './RkNavLink';
+export { default } from './RkNavLink';

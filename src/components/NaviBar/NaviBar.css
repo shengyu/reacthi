@@ -4,7 +4,7 @@
   width: 100%;
   min-width: 320px;
   max-width: 540px;
-  background-color:goldenrod;
+  background-color: goldenrod;
   height: 44px;
   display: flex;
 }
@@ -19,7 +19,6 @@
   height: 44px;
   background-color: aqua;
 }
-
 
 .sidebar {
   background-color: green;

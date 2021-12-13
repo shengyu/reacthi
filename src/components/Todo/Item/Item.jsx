@@ -1,40 +1,54 @@
 import React, { Component } from 'react';
-import "./Item.css"
+import './Item.css';
 
 export default class Item extends Component {
-    state = { mouse: false };
+  state = { mouse: false };
 
-    handleMouse = flag => {
-        return () => {
-            this.setState({ mouse: flag })
-        };
+  handleMouse = (flag) => {
+    return () => {
+      this.setState({ mouse: flag });
     };
+  };
 
-    handleCheck = (id) => {
-        return (event) => {
-            this.props.updateTodo(id, event.target.checked);
-        }
+  handleCheck = (id) => {
+    return (event) => {
+      this.props.updateTodo(id, event.target.checked);
     };
+  };
 
-    handleDelete = (id) => {
-        return () => {
-            if(window.confirm('确定删除吗？')){
-                this.props.deleteTodo(id);
-            }
-        };
+  handleDelete = (id) => {
+    return () => {
+      if (window.confirm('确定删除吗？')) {
+        this.props.deleteTodo(id);
+      }
     };
+  };
 
-    render() {
-        const { id, name, done } = this.props;
-        const { mouse } = this.state;
-        return (
-            <li style={{ backgroundColor: mouse ? '#ddd' : 'white' }} onMouseEnter={this.handleMouse(true)} onMouseLeave={this.handleMouse(false)}>
-                <label>
-                    <input type="checkbox" checked={done} onChange={this.handleCheck(id)}></input>
-                    <span>{name}</span>
-                </label>
-                <button onClick={this.handleDelete(id)} className="btn btn-danger" style={{ display: mouse ? 'block' : 'none' }}>Delete</button>
-            </li>
-        );
-    }
+  render() {
+    const { id, name, done } = this.props;
+    const { mouse } = this.state;
+    return (
+      <li
+        style={{ backgroundColor: mouse ? '#ddd' : 'white' }}
+        onMouseEnter={this.handleMouse(true)}
+        onMouseLeave={this.handleMouse(false)}
+      >
+        <label>
+          <input
+            type="checkbox"
+            checked={done}
+            onChange={this.handleCheck(id)}
+          ></input>
+          <span>{name}</span>
+        </label>
+        <button
+          onClick={this.handleDelete(id)}
+          className="btn btn-danger"
+          style={{ display: mouse ? 'block' : 'none' }}
+        >
+          Delete
+        </button>
+      </li>
+    );
+  }
 }

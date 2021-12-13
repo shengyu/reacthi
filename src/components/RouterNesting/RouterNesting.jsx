@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { 
+import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
   useParams,
-  useRouteMatch
+  useRouteMatch,
 } from 'react-router-dom';
 
 export default class RouterNesting extends Component {
@@ -34,7 +34,6 @@ export default class RouterNesting extends Component {
           </Switch>
         </div>
       </Router>
-    
     );
   }
 }
