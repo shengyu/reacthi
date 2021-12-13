@@ -1,9 +1,9 @@
-import RouterNesting from './components/RouterNesting';
+import PromiseDemo from 'components/PromiseDemo';
 
 function App() {
   return (
     <div>
-      <RouterNesting />
+      <PromiseDemo />
     </div>
   );
 }
