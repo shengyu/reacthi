@@ -22,9 +22,20 @@ export default function PromiseDemo() {
     console.log(`addAsync2 - Now I'm done!`);
   }
 
+  async function getId() {
+    console.log('getId');
+    let id: string = await getIdFromWeb();
+    console.log('getId ' + id);
+  }
+
+  async function getIdFromWeb(): Promise<string> {
+    console.log('getIdFromWeb');
+    return 'myId';
+  }
+
   useEffect(() => {
-    addAsync();
-    addAsync2();
+    getId();
+    console.log('getId done');
   });
 
   return (
