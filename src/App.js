@@ -1,9 +1,9 @@
-import PromiseDemo from 'components/PromiseDemo';
+import ModalDemo from 'components/ModalDemo';
 
 function App() {
   return (
     <div>
-      <PromiseDemo />
+      <ModalDemo />
     </div>
   );
 }
