@@ -1,9 +1,9 @@
-import ModalDemo from 'components/ModalDemo';
+import TableDemo from 'components/TableDemo';
 
 function App() {
   return (
     <div>
-      <ModalDemo />
+      <TableDemo />
     </div>
   );
 }
